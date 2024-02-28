@@ -1,16 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Container from "@mui/material/Container";
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Hi, my name is Archi. I am a web developer
-        </p>
-      </header>
-    </div>
+    <Container> 
+      <p className="heading-text">HI, MY NAME IS ARCHI.</p>
+      <p className="heading-subtext">I AM A WEB DEVELOPER</p>
+    </Container>
   );
+
 }
 
 export default App;
