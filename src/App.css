@@ -2,20 +2,22 @@
 
 body, #root {
   font-family: 'Merriweather', serif;
-  background-color: aquamarine;
+  background-color: #ffb3b3;
+  /* background-color: #f0b1e4; */
 }
 
 p {
   color: black;
 }
 
-.heading-text {
-  font-family: 'Merriweather', serif;
+.heading1 {
   font-size: 90px;
-  line-height: 5px;
 }
 
-.heading-subtext {
-  font-family: 'Merriweather', serif;
-  font-size: 80px;
+.heading2 {
+  font-size: 60px;
+}
+
+.heading3 {
+  font-size: 40px;
 }
