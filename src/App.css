@@ -2,12 +2,13 @@
 
 body, #root {
   font-family: 'Merriweather', serif;
-  background-color: #ffb3b3;
-  /* background-color: #f0b1e4; */
+  background: radial-gradient(circle, #0f1b4d, #030c1a);
+  height: 100vh;
+  width: 100vw;
 }
 
 p {
-  color: black;
+  color: whitesmoke;
 }
 
 .heading1 {
