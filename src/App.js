@@ -1,11 +1,9 @@
 import "./App.css";
 import { useState, useEffect } from "react";
-import Container from "@mui/material/Container";
-
-import Separator from "./Components/Separator";
+import TopBar from "./Components/TopBar/TopBar"
 
 function App() {
-  const [currentSection, setCurrentSection] = useState("ABCD");
+  const [currentSection, setCurrentSection] = useState("ABOUT");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,9 +26,7 @@ function App() {
 
   return (
     <div>
-      <div className="top-bar">
-        <p style={{color:"black", fontWeight:"bold"}}>{currentSection}</p>
-      </div>
+      <TopBar text={currentSection}/>
       <section id="ABOUT">
         <p className="heading1">HI, I AM ARCHI.</p>
         {/* <p className="heading2">SOFTWARE, WEB AND MOBILE DEVELOPER</p> */}
