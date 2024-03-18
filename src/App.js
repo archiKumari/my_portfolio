@@ -2,7 +2,7 @@ import "./App.css";
 import { useState, useEffect } from "react";
 
 import TopBar from "./Components/TopBar/TopBar"
-import SkillsSection from "./Components/Skills/SkillsSection";
+import SkillsSection from "./Components/SkillsSection/SkillsSection";
 
 function App() {
   const [currentSection, setCurrentSection] = useState("ABOUT");
