@@ -1,6 +1,8 @@
 import "./App.css";
 import { useState, useEffect } from "react";
+
 import TopBar from "./Components/TopBar/TopBar"
+import SkillsSection from "./Components/Skills/SkillsSection";
 
 function App() {
   const [currentSection, setCurrentSection] = useState("ABOUT");
@@ -33,14 +35,8 @@ function App() {
         <p className="heading2">WEB DEVELOPER</p>
       </section>
       <section id="SKILLS">
-        {/* <p className="heading3">SKILLS</p> */}
-        <p className="heading4">
-          Frontend: React, React Native, HTML, CSS, Javascript
-        </p>
-        <p className="heading4">Backend: Haskell, NodeJS, Postgres</p>
-        <p className="heading4">
-          Tools: Git, Figma, Webflow, OS - Linux and Windows
-        </p>
+        <p className="heading3">SKILLS</p>
+        <SkillsSection/>
       </section>
       <section id="WORK">
         {/* <p className="heading3">WORK</p> */}
