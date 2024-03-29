@@ -39,12 +39,6 @@ function App() {
         <SkillsSection/>
       </section>
       <section id="WORK">
-        {/* <p className="heading3">WORK</p> */}
-        <p className="heading4">Phonebook: Web Application</p>
-        <p className="heading4">Expense Tracker: Mobile Application</p>
-        <p className="heading4">Snake Game: Haskell Application</p>
-      </section>
-      <section id="EXPERIENCE">
         {/* <p className="heading3">EXPERIENCE</p> */}
         <p className="heading4">
           Frontend Developer (Remote), Maa Gyan Services
@@ -55,6 +49,12 @@ function App() {
         <p className="heading4">
           Frontend Developer (Remote), Betiyan Nidhi Limited
         </p>
+      </section>
+      <section id="PROJECTS">
+        {/* <p className="heading3">WORK</p> */}
+        <p className="heading4">Phonebook: Web Application</p>
+        <p className="heading4">Expense Tracker: Mobile Application</p>
+        <p className="heading4">Snake Game: Haskell Application</p>
       </section>
     </div>
   );
