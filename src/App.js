@@ -1,8 +1,9 @@
 import "./App.css";
 import { useState, useEffect } from "react";
 
-import TopBar from "./Components/TopBar/TopBar"
+import TopBar from "./Components/TopBar/TopBar";
 import SkillsSection from "./Components/SkillsSection/SkillsSection";
+import WorkSection from "./Components/WorkSection/WorkSection";
 
 function App() {
   const [currentSection, setCurrentSection] = useState("ABOUT");
@@ -27,8 +28,14 @@ function App() {
   }, [currentSection]);
 
   return (
-    <div>
-      <TopBar text={currentSection}/>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        flexDirection: "column",
+      }}
+    >
+      <TopBar text={currentSection} />
       <section id="ABOUT">
         <p className="heading1">HI, I AM ARCHI.</p>
         {/* <p className="heading2">SOFTWARE, WEB AND MOBILE DEVELOPER</p> */}
@@ -36,19 +43,19 @@ function App() {
       </section>
       <section id="SKILLS">
         <p className="heading3">SKILLS</p>
-        <SkillsSection/>
+        <SkillsSection />
       </section>
-      <section id="WORK">
-        {/* <p className="heading3">EXPERIENCE</p> */}
-        <p className="heading4">
-          Frontend Developer (Remote), Maa Gyan Services
-        </p>
-        <p className="heading4">
-          Mobile Application Developer (Remote), Petdrifts
-        </p>
-        <p className="heading4">
-          Frontend Developer (Remote), Betiyan Nidhi Limited
-        </p>
+      <section id="EXPERIENCE">
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
+          <p className="heading3">EXPERIENCE</p>
+          <WorkSection />
+        </div>
       </section>
       <section id="PROJECTS">
         {/* <p className="heading3">WORK</p> */}

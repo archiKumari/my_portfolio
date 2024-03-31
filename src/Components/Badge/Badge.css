@@ -1,0 +1,17 @@
+.badge {
+    background-color: whitesmoke;
+    height: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    margin: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #0f1b4d;
+    border-radius: 20px;
+}
+
+.text {
+    color: #0f1b4d;
+}
