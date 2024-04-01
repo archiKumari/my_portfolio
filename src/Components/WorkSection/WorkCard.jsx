@@ -16,8 +16,8 @@ const WorkCard = ({data}) => {
       <div className="text-container">
         <div>
         <p className="title">{position}</p>
-        <p className="subtext">{companyName}</p>
-        <p className="subtext">{duration}</p>
+        <p className="subtext1">{companyName}</p>
+        <p className="subtext2">{duration}</p>
         </div>
         <div className="badge-container">
         {skills.map((item) => (<Badge text={item}/>))}
