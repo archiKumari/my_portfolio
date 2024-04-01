@@ -35,7 +35,7 @@ function App() {
         flexDirection: "column",
       }}
     >
-      <TopBar text={currentSection} />
+      {/* <TopBar text={currentSection} /> */}
       <section id="ABOUT">
         <p className="heading1">HI, I AM ARCHI.</p>
         {/* <p className="heading2">SOFTWARE, WEB AND MOBILE DEVELOPER</p> */}
