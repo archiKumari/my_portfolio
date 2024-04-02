@@ -1,10 +1,15 @@
 import "./DesktopFrame.css";
-import projectImg from "../../../Assets/Project-images/Phonebook/Contact List.png"
+
+import projectImg1 from "../../../Assets/Work-images/BNL/image1.png";
 
 const DesktopFrame = () => {
-  return <div className="desktop-container">
-    <img className="desktop-image" src={projectImg}/>
-  </div>;
+  return (
+    <div>
+      <div className="desktop-container">
+        <img className="desktop-image" src={projectImg1} />
+      </div>
+    </div>
+  );
 };
 
 export default DesktopFrame;

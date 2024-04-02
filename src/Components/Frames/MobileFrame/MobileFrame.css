@@ -1,10 +1,10 @@
+
 .mobile-container {
-    /* height: 200px; */
-    width: 250px;
-    /* background-color: black; */
+    width: 22%;
     background-color: rgb(22,23,23);
     border-radius: 35px;
     padding: 10px;
+    margin-right: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
