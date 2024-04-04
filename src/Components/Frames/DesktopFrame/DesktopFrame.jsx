@@ -1,20 +1,21 @@
 import "./DesktopFrame.css";
-
-import projectImg1 from "../../../Assets/Work-images/BNL/image3.png";
 import Badge from "../../Badge/Badge";
 
-const DesktopFrame = () => {
-  const skills = ["React", "NodeJs", "MongoDB", "Photoshop"];
+const DesktopFrame = ({ data }) => {
+  if (!data) {
+    return <div>{data}</div>;
+  }
+  const { companyName, position, duration, skills, imagePath } = data;
   return (
     <div className="desktop-container">
-      <p className="desktop-title">Betiyan Nidhi Limited</p>
+      <p className="desktop-title">{companyName}</p>
       <div className="desktop-content">
-        <img className="desktop-image" alt="Website Homepage" src={projectImg1} />
+        <img className="desktop-image" alt="Website Homepage" src={imagePath} />
       </div>
       <div className="desktop-text">
         <div>
-          <p className="text-header">Frontend Developer</p>
-          <p className="subtext">Aug 2022 - Dec 2022</p>
+          <p className="text-header">{position}</p>
+          <p className="subtext">{duration}</p>
         </div>
         <div className="badge-container">
           {skills.map((item) => (

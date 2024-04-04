@@ -1,19 +1,21 @@
 import "./MobileFrame.css";
-import projectImg1 from "../../../Assets/Project-images/Petdrifts/Homepage.png";
 import Badge from "../../Badge/Badge";
 
-const MobileFrame = () => {
-  const skills = ["React Native", "Figma"];
+const MobileFrame = ({ data }) => {
+  if (!data) {
+    return <div>{data}</div>;
+  }
+  const { companyName, position, duration, skills, imagePath } = data;
   return (
     <div className="mobile-container">
-      <p className="mobile-title">Petdrifts Mobile App</p>
+      <p className="mobile-title">{companyName + " Mobile App"}</p>
       <div className="mobile-content">
-        <img className="mobile-image" alt="Mobile App" src={projectImg1} />
+        <img className="mobile-image" alt="Mobile App" src={imagePath} />
       </div>
       <div className="mobile-text">
         <div>
-          <p className="text-header">Mobile App Developer</p>
-          <p className="subtext">Jan 2023 - Apr 2023</p>
+          <p className="text-header">{position}</p>
+          <p className="subtext">{duration}</p>
         </div>
         <div className="badge-container">
           {skills.map((item) => (

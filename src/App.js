@@ -47,21 +47,13 @@ function App() {
         <SkillsSection />
       </section>
       <section id="EXPERIENCE">
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-          }}
-        >
-          <p className="heading3">EXPERIENCE</p>
-          <WorkSection />
-        </div>
+        <p className="heading3">EXPERIENCE</p>
+        <WorkSection />
       </section>
       <section id="PROJECTS">
-        <DesktopFrame/>
-        <div style={{padding:"30px"}}></div>
-        <MobileFrame/>
+        <DesktopFrame />
+        <div style={{ padding: "30px" }}></div>
+        <MobileFrame />
         {/* <p className="heading3">WORK</p> */}
         <p className="heading4">Phonebook: Web Application</p>
         <p className="heading4">Expense Tracker: Mobile Application</p>
