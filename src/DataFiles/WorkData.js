@@ -1,6 +1,7 @@
-import homePage1 from "../Assets/bnl-home-page.png"
-import homePage2 from "../Assets/petdrifts-home-page.jpg"
-import homePage3 from "../Assets/mgs-home-page.png"
+
+import image1 from "../Assets/Work-images/BNL/image1.png"
+import image2 from "../Assets/Work-images/Petdrifts/image3.png"
+import image3 from "../Assets/Work-images/MGS/image1.png"
 
 const workData = [
     {
@@ -8,21 +9,21 @@ const workData = [
       position: 'Full Stack Developer',
       duration: 'May 2023 - Present',
       skills: ['React', 'Haskell', 'Postgres', 'UI/UX'],
-      imagePath: homePage3
+      imagePath: image3
     },
     {
       companyName: 'PetDrifts',
       position: 'Mobile Software Developer',
       duration: 'Jan 2023 - April 2023',
       skills: ['ReactNative', 'Figma', 'Bluetooth'],
-      imagePath: homePage2
+      imagePath: image2
     },
     {
       companyName: 'Betiyan Nidhi Limited',
       position: 'Frontend Developer',
       duration: 'Aug 2022 - Dec 2022',
       skills: ['React', 'NodeJS', 'MongoDB', 'Photoshop'],
-      imagePath: homePage1
+      imagePath: image1
     }
   ];
   
