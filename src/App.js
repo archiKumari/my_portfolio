@@ -1,5 +1,4 @@
 import "./App.css";
-import ProjectSection from "./Components/ProjectSection/ProjectSection";
 
 import SkillsSection from "./Components/SkillsSection/SkillsSection";
 import WorkSection from "./Components/WorkSection/WorkSection";
@@ -24,12 +23,8 @@ function App() {
         <SkillsSection />
       </section>
       <section id="EXPERIENCE">
-        <p className="heading3">EXPERIENCE</p>
+        <p className="heading3">WORK</p>
         <WorkSection />
-      </section>
-      <section id="PROJECTS">
-      <p className="heading3">PROJECTS</p>
-        <ProjectSection/>
       </section>
     </div>
   );

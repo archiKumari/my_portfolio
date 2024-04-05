@@ -1,21 +1,18 @@
 import "./MobileFrame.css";
 import Badge from "../../Badge/Badge";
 
-const MobileFrame = ({ data }) => {
-  if (!data) {
-    return <div>{data}</div>;
-  }
-  const { companyName, position, duration, skills, imagePath } = data;
+const MobileFrame = ({ title,heading,subtext,skills,imagePath }) => {
+  
   return (
     <div className="mobile-container">
-      <p className="mobile-title">{companyName + " Mobile App"}</p>
+      <p className="mobile-title">{title + " App"}</p>
       <div className="mobile-content">
         <img className="mobile-image" alt="Mobile App" src={imagePath} />
       </div>
       <div className="mobile-text">
         <div>
-          <p className="text-header">{position}</p>
-          <p className="subtext">{duration}</p>
+          <p className="text-header">{heading}</p>
+          <p className="subtext">{subtext}</p>
         </div>
         <div className="badge-container">
           {skills.map((item) => (

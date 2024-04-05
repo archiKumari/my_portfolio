@@ -13,7 +13,7 @@ const workData = [
       imagePath: image3
     },
     {
-      companyName: 'PetDrifts',
+      companyName: 'PetDrifts Mobile',
       position: 'Mobile Software Developer',
       duration: 'Jan 2023 - April 2023',
       skills: ['ReactNative', 'Figma', 'Bluetooth'],
