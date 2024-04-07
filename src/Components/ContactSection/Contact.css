@@ -1,0 +1,21 @@
+.contact-container {
+    padding: 50px;
+    font-size: 26px;
+}
+
+.contact-container p {
+    font-size: 64px;
+}
+
+.contact-container a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.contact-container svg {
+    width: 55px;
+    height: 55px;
+    margin: 15px;
+    cursor: pointer;
+}
