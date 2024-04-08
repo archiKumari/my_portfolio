@@ -2,7 +2,7 @@
 
 body, #root {
   font-family: 'Merriweather', serif;
-  background: radial-gradient(circle, #0f1b4d, #030c1a);
+  background: radial-gradient(circle,rgba(15,27,77,1), rgba(15,27,77,1),rgba(3,12,26,1));
   height: 100vh;
   padding: 20px;
   color: whitesmoke;

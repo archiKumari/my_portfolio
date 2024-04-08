@@ -26,11 +26,11 @@
 
 .mobile-title {
   position: absolute;
-  margin-top: 8%;
+  margin-top: 10%;
   right: 3%;
   font-size: 70px;
   color: rgba(255, 255, 255, 1);
-  text-shadow: 2px 2px 3px rgba(250, 250, 250, 0.5);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
 }
 
 .mobile-text {
