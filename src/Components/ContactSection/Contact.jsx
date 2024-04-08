@@ -11,7 +11,9 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 const Contact = () => {
   return (
     <div className="contact-container">
-      <p>Connect with me</p>
+      <p>Either you want a website or mobile app for your business,</p>
+      <p>Or you have a full time opportunity for me,</p>
+      <p>Feel free to connect <strong>🤝</strong></p>
       <a href="https://join.slack.com/t/archi-kumari/shared_invite/zt-2gbyqcv6q-26j51G4ZXH4VPe0K7wfJJg">
         <FontAwesomeIcon icon={faSlack} />
       </a>
