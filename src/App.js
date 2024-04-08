@@ -31,6 +31,7 @@ function App() {
       </section>
       <HorizontalDivider/>
       <section id="CONTACTS">
+      <p className="heading3">CONTACT</p>
         <Contact/>
       </section>
     </div>
