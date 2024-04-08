@@ -4,6 +4,7 @@ import SkillsSection from "./Components/SkillsSection/SkillsSection";
 import WorkSection from "./Components/WorkSection/WorkSection";
 import Contact from "./Components/ContactSection/Contact";
 import HorizontalDivider from "./Components/Dividers/HorizontalDivider"
+import ProjectSection from "./Components/ProjectSection/ProjectSection";
 
 function App() {
   return (
@@ -25,9 +26,14 @@ function App() {
         <SkillsSection />
       </section>
       <HorizontalDivider/>
-      <section id="EXPERIENCE">
+      <section id="WORK">
         <p className="heading3">WORK</p>
         <WorkSection />
+      </section>
+      <HorizontalDivider/>
+      <section id="PROJECTS">
+        <p className="heading3">PROJECTS</p>
+        <ProjectSection/>
       </section>
       <HorizontalDivider/>
       <section id="CONTACTS">
