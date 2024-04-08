@@ -17,8 +17,9 @@ import {
   faCode,
   faServer,
   faDatabase,
-  faCodePullRequest,
   faMobileScreen,
+  faObjectGroup,
+  faLayerGroup
 } from "@fortawesome/free-solid-svg-icons";
 
 function SkillsSection() {
@@ -28,7 +29,7 @@ function SkillsSection() {
     { icon: faJs, text: "JavaScript" },
     { icon: faReact, text: "React" },
     { icon: faMobileScreen, text: "React Native" },
-    { icon: faCodePullRequest, text: "UI/UX" },
+    { icon: faObjectGroup, text: "UI/UX" },
   ];
   const backendItems = [
     { icon: faNode, text: "NodeJs" },
@@ -40,6 +41,7 @@ function SkillsSection() {
     { icon: faGithub, text: "Git" },
     { icon: faWebflow, text: "Webflow" },
     { icon: faFigma, text: "Figma" },
+    { icon: faLayerGroup, text: "Photoshop" },
   ];
   const osItems = [
     { icon: faLinux, text: "Linux" },
@@ -47,7 +49,7 @@ function SkillsSection() {
   ];
 
   return (
-  <div style={{display:"flex", flexDirection:"row"}}>
+  <div style={{display:"flex", flexDirection:"row",justifyContent:"center",margin:"80px"}}>
     <SkillCard skills={frontendItems} cardTitle="Frontend"/>
     <SkillCard skills={backendItems} cardTitle="Backend"/>
     <SkillCard skills={toolItems} cardTitle="Tools"/>
