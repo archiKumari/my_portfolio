@@ -2,16 +2,16 @@
 
 body, #root {
   font-family: 'Merriweather', serif;
-  background: radial-gradient(circle,rgba(15,27,77,1), rgba(15,27,77,1),rgba(3,12,26,1));
-  height: 100vh;
-  padding: 30px;
   color: whitesmoke;
 }
 
 .main-container {
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
+  padding: 60px;
+  z-index: 1000;
 }
 
 ::-webkit-scrollbar {
@@ -34,6 +34,6 @@ html {
   font-size: 30px;
 }
 
-section {
+/* section {
   margin: 40px;
-}
+} */
