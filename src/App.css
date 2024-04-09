@@ -4,16 +4,23 @@ body, #root {
   font-family: 'Merriweather', serif;
   background: radial-gradient(circle,rgba(15,27,77,1), rgba(15,27,77,1),rgba(3,12,26,1));
   height: 100vh;
-  padding: 20px;
+  padding: 30px;
   color: whitesmoke;
 }
 
-.heading1 {
-  font-size: 90px;
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.heading2 {
-  font-size: 60px;
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .heading3 {

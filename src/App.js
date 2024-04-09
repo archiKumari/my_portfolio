@@ -1,44 +1,37 @@
 import "./App.css";
 
+import HeroSection from "./Components/HeroSection/HeroSection";
 import SkillsSection from "./Components/SkillsSection/SkillsSection";
 import WorkSection from "./Components/WorkSection/WorkSection";
-import Contact from "./Components/ContactSection/Contact";
-import HorizontalDivider from "./Components/Dividers/HorizontalDivider"
 import ProjectSection from "./Components/ProjectSection/ProjectSection";
+import Contact from "./Components/ContactSection/Contact";
+import HorizontalDivider from "./Components/Dividers/HorizontalDivider";
 
 function App() {
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        flexDirection: "column",
-      }}
-    >
+    <div className="main-container">
       <section id="ABOUT">
-        <p className="heading1">HI, I AM ARCHI.</p>
-        {/* <p className="heading2">SOFTWARE, WEB AND MOBILE DEVELOPER</p> */}
-        <p className="heading2">WEB DEVELOPER</p>
+        <HeroSection />
       </section>
-      <HorizontalDivider/>
+      <HorizontalDivider />
       <section id="SKILLS">
         <p className="heading3">SKILLS</p>
         <SkillsSection />
       </section>
-      <HorizontalDivider/>
+      <HorizontalDivider />
       <section id="WORK">
         <p className="heading3">WORK</p>
         <WorkSection />
       </section>
-      <HorizontalDivider/>
+      <HorizontalDivider />
       <section id="PROJECTS">
         <p className="heading3">PROJECTS</p>
-        <ProjectSection/>
+        <ProjectSection />
       </section>
-      <HorizontalDivider/>
+      <HorizontalDivider />
       <section id="CONTACTS">
-      <p className="heading3">CONTACT</p>
-        <Contact/>
+        <p className="heading3">CONTACT</p>
+        <Contact />
       </section>
     </div>
   );
