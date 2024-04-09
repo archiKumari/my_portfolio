@@ -14,12 +14,10 @@ import {
   faWindows,
 } from "@fortawesome/free-brands-svg-icons";
 import {
-  faCode,
   faServer,
   faDatabase,
   faMobileScreen,
   faObjectGroup,
-  faLayerGroup
 } from "@fortawesome/free-solid-svg-icons";
 
 function SkillsSection() {
@@ -34,14 +32,14 @@ function SkillsSection() {
   const backendItems = [
     { icon: faNode, text: "NodeJs" },
     { icon: faServer, text: "Express" },
-    { icon: faCode, text: "Haskell" },
+    { icon: null, text: "Haskell" },
     { icon: faDatabase, text: "PostgreSQL" },
   ];
   const toolItems = [
     { icon: faGithub, text: "Git" },
     { icon: faWebflow, text: "Webflow" },
     { icon: faFigma, text: "Figma" },
-    { icon: faLayerGroup, text: "Photoshop" },
+    { icon: null, text: "Photoshop" },
   ];
   const osItems = [
     { icon: faLinux, text: "Linux" },
