@@ -1,4 +1,4 @@
-import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
+import { motion } from "framer-motion";
 
 import "./App.css";
 import HeroSection from "./Components/HeroSection/HeroSection";
@@ -9,26 +9,8 @@ import Contact from "./Components/ContactSection/Contact";
 import HorizontalDivider from "./Components/Dividers/HorizontalDivider";
 
 function App() {
-  const mouseX = useMotionValue(0);
-  const mouseY = useMotionValue(0);
-
-  function handleMouseMove({clientX,clientY,currentTarget}) {
-    const {left,top} = currentTarget.getBoundingClientRect();
-    let xPosition = clientX - left;
-    let yPosition = clientY - top;
-
-    mouseX.set(xPosition);
-    mouseY.set(yPosition);
-  }
-
   return (
-    <motion.div
-      className="main-container"
-      onMouseMove={handleMouseMove}
-      style={{
-        background: useMotionTemplate`radial-gradient(250px circle at ${mouseX}px ${mouseY}px ,rgba(14,41,150,2),rgba(2,16,71,1))`,
-      }}
-    >
+    <motion.div className="main-container">
       <section id="ABOUT">
         <HeroSection />
       </section>

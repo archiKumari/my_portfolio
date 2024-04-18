@@ -36,7 +36,6 @@
 
 .mobile-title {
   font-size: 45px;
-  color: rgba(255, 255, 255, 1);
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
 }
 
@@ -46,7 +45,6 @@
 
 .subtext {
   font-size: 16px;
-  opacity: 0.7;
 }
 
 .badge-container {
