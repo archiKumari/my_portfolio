@@ -7,30 +7,32 @@ import WorkSection from "./Components/WorkSection/WorkSection";
 import ProjectSection from "./Components/ProjectSection/ProjectSection";
 import Contact from "./Components/ContactSection/Contact";
 import HorizontalDivider from "./Components/Dividers/HorizontalDivider";
+import NavBar from "./Components/NavBar/NavBar";
 
 function App() {
   return (
     <motion.div className="main-container">
-      <section id="ABOUT">
+      <section>
+        <NavBar />
         <HeroSection />
       </section>
       <HorizontalDivider />
-      <section id="SKILLS">
+      <section>
         <p className="heading3">SKILLS</p>
         <SkillsSection />
       </section>
       <HorizontalDivider />
-      <section id="WORK">
+      <section>
         <p className="heading3">WORK</p>
         <WorkSection />
       </section>
       <HorizontalDivider />
-      <section id="PROJECTS">
+      <section>
         <p className="heading3">PROJECTS</p>
         <ProjectSection />
       </section>
       <HorizontalDivider />
-      <section id="CONTACTS">
+      <section>
         <p className="heading3">CONTACT</p>
         <Contact />
       </section>

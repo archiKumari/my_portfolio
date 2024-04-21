@@ -1,0 +1,26 @@
+.navbar{
+    height: 100px;
+}
+
+.wrapper{
+    height: 100%;
+    max-width: 75%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar span{
+    font-weight: bold;
+}
+
+.links{
+    display: flex;
+    gap: 20px;
+}
+
+.links a img {
+    width:  30px;
+    height: 30px;
+}
