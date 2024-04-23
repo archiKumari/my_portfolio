@@ -1,7 +1,62 @@
-.heading1 {
-    font-size: 90px;
+.hero {
+  height: 85vh;
+  background: linear-gradient(180deg, rgb(12, 12, 29), rgb(17, 17, 50));
+  position: relative;
+}
+
+.wrapper {
+  max-width: 1366px;
+  height: 100%;
+  margin: auto;
+  /* border: 2px solid white; */
+
+  .text-container {
+    /* border: 2px solid white; */
+    height: 100%;
+    width: 65%;
+    /* text-align: center; */
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
   }
-  
-  .heading2 {
-    font-size: 60px;
+
+  h2 {
+    font-size: 30px;
+    color: rebeccapurple;
+    letter-spacing: 10px;
+    margin: 0;
   }
+
+  h1 {
+    font-size: 80px;
+    margin: 0;
+  }
+
+  .buttons {
+    button {
+      padding: 12px;
+      border: 1px solid white;
+      border-radius: 10px;
+      background-color: transparent;
+      color: white;
+      margin-right: 20px;
+      font-weight: 300;
+    }
+  }
+
+  img {
+    width: 40px;
+  }
+}
+
+.sliding-text-container{
+  position: absolute;
+  font-size: 50vh;
+  bottom: -90px;
+  white-space: nowrap;
+  color: rgb(255,255,255,0.09);
+  width: 50%;
+  font-weight: bold;
+}
