@@ -8,14 +8,10 @@
   max-width: 1366px;
   height: 100%;
   margin: auto;
-  /* border: 2px solid white; */
 
   .text-container {
-    /* border: 2px solid white; */
     height: 100%;
     width: 65%;
-    /* text-align: center; */
-    /* margin: auto; */
     display: flex;
     flex-direction: column;
     justify-content: center;
