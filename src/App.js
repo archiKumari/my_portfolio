@@ -12,27 +12,27 @@ import NavBar from "./Components/NavBar/NavBar";
 function App() {
   return (
     <motion.div className="main-container">
-      <section>
+      <section id="Homepage">
         <NavBar />
         <HeroSection />
       </section>
       <HorizontalDivider />
-      <section>
+      <section id="My Skills">
         <p className="heading3">SKILLS</p>
         <SkillsSection />
       </section>
       <HorizontalDivider />
-      <section>
+      <section id="Experience">
         <p className="heading3">WORK</p>
         <WorkSection />
       </section>
       <HorizontalDivider />
-      <section>
+      <section id="Projects">
         <p className="heading3">PROJECTS</p>
         <ProjectSection />
       </section>
       <HorizontalDivider />
-      <section>
+      <section id="Contact">
         <p className="heading3">CONTACT</p>
         <Contact />
       </section>

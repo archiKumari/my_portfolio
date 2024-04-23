@@ -6,11 +6,12 @@ import slack from "../../Assets/Logo/slack.svg";
 import github from "../../Assets/Logo/github.svg";
 import linkedin from "../../Assets/Logo/linkedIn.svg";
 import gmail from "../../Assets/Logo/gmail.svg";
+import SideBar from "../SideBar/SideBar";
 
 const NavBar = () => {
   return (
     <div className="navbar">
-      {/* sideBar */}
+      <SideBar/>
       <div className="wrapper">
         <motion.span
           initial={{ opacity: 0, scale: 0.5 }}
