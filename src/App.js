@@ -18,7 +18,7 @@ function App() {
       </section>
       <HorizontalDivider />
       <section id="My Skills">
-        <p className="heading3">SKILLS</p>
+        {/* <p className="heading3">SKILLS</p> */}
         <SkillsSection />
       </section>
       <HorizontalDivider />

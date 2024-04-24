@@ -1,4 +1,5 @@
 import SkillCard from "./SkillCard";
+import "./SkillCard.css";
 
 import React from "react";
 import {
@@ -45,16 +46,23 @@ function SkillsSection() {
     { icon: faLinux, text: "Linux" },
     { icon: faWindows, text: "Windows" },
   ];
-
   return (
-  <div style={{display:"flex", flexDirection:"row",justifyContent:"center",margin:"80px"}}>
-    <SkillCard skills={frontendItems} cardTitle="Frontend"/>
-    <SkillCard skills={backendItems} cardTitle="Backend"/>
-    <SkillCard skills={toolItems} cardTitle="Tools"/>
-    <SkillCard skills={osItems} cardTitle="OS"/>
-
-  </div>
-  )
+    <>
+      <p className="section-title">SKILLS</p>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "center",
+        }}
+      >
+        <SkillCard skills={frontendItems} cardTitle="Frontend" />
+        <SkillCard skills={backendItems} cardTitle="Backend" />
+        <SkillCard skills={toolItems} cardTitle="Tools" />
+        <SkillCard skills={osItems} cardTitle="OS" />
+      </div>
+    </>
+  );
 }
 
 export default SkillsSection;
