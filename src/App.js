@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 import "./App.css";
 import HeroSection from "./Components/HeroSection/HeroSection";
-import SkillsSection from "./Components/SkillsSection/SkillsSection";
+import AboutSection from "./Components/AboutSection/AboutSection";
 import WorkSection from "./Components/WorkSection/WorkSection";
 import ProjectSection from "./Components/ProjectSection/ProjectSection";
 import Contact from "./Components/ContactSection/Contact";
@@ -17,9 +17,8 @@ function App() {
         <HeroSection />
       </section>
       <HorizontalDivider />
-      <section id="My Skills">
-        {/* <p className="heading3">SKILLS</p> */}
-        <SkillsSection />
+      <section id="About Me">
+        <AboutSection/>
       </section>
       <HorizontalDivider />
       <section id="Experience">
