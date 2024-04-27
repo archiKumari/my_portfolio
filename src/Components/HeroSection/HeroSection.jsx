@@ -59,7 +59,7 @@ const HeroSection = () => {
             <motion.button variants={textVariants}>
               See Latest Works
             </motion.button>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
+            <motion.button variants={textVariants} style={{color:"rgb(17, 17, 50)",backgroundColor:"white",fontWeight:"600"}}>Contact Me</motion.button>
           </motion.div>
           <motion.img
             src={scrollImg}
