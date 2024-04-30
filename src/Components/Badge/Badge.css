@@ -1,16 +1,12 @@
 .badge {
-    /* background-color: rgba(250,250,250,0.6); */
+    background-color: rgba(250,250,250,0.1);
     height: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8px;
+    padding: 12px;
     margin: 5px;
-    font-size: 13px;
-    /* font-weight: bold; */
-    /* color: #0f1b4d; */
-    color: whitesmoke;
-    border-right : 1.5px solid rgb(250,250,250);
-    border-bottom : 1.5px solid rgb(250,250,250);
-    border-radius: 12px;
+    font-size: 14px;
+    color: rgb(250,250,250,0.6);
+    border-radius: 5px;
 }

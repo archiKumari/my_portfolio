@@ -3,7 +3,7 @@ import "./Badge.css"
 const Badge = ({text}) => {
     return (
         <div className="badge">
-            <p>{text}</p>
+            <span>{text}</span>
         </div>
     )
 }

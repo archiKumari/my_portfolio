@@ -1,6 +1,6 @@
 
 import image1 from "../Assets/Work-images/BNL/image1.png"
-import image2 from "../Assets/Work-images/Petdrifts/image3.png"
+import image2 from "../Assets/Work-images/Petdrifts/Screen1.png"
 import image3 from "../Assets/Work-images/MGS/image1.png"
 
 const workData = [
@@ -9,6 +9,7 @@ const workData = [
       position: 'Full Stack Developer',
       duration: 'May 2023 - Present',
       skills: ['React', 'Haskell', 'Postgres', 'UI/UX'],
+      description:"",
       category: 'web',
       imagePath: image3
     },
@@ -17,6 +18,7 @@ const workData = [
       position: 'Mobile Software Developer',
       duration: 'Jan 2023 - April 2023',
       skills: ['ReactNative', 'Figma', 'Bluetooth'],
+      description:"",
       category: 'mobile',
       imagePath: image2
     },
@@ -25,6 +27,7 @@ const workData = [
       position: 'Frontend Developer',
       duration: 'Aug 2022 - Dec 2022',
       skills: ['React', 'NodeJS', 'MongoDB', 'Photoshop'],
+      description:"",
       category: 'web',
       imagePath: image1
     }
