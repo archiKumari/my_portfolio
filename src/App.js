@@ -23,7 +23,6 @@ function App() {
       <PortfolioSection />
       <HorizontalDivider />
       <section id="Contact">
-        <p className="heading3">CONTACT</p>
         <Contact />
       </section>
     </motion.div>
