@@ -6,6 +6,7 @@
     position: sticky;
     top: 0;
     left: 0;
+    padding-top: 30px;
     text-align: center;
     color: orange;
     font-size: 34px;
@@ -16,7 +17,7 @@
 
     .progressBar {
       height: 8px;
-      background-color: rebeccapurple;
+      background-color: white;
     }
   }
 
@@ -38,9 +39,8 @@
 
       .imageContainer {
         flex: 1;
-        height: 80%;
-        margin-top: 20px;
-        margin-left: 20px;
+        height: 60%;
+        margin-top: 50px;
 
         img {
           width: 100%;
