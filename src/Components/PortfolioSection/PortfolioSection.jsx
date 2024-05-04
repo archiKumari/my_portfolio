@@ -17,7 +17,7 @@ const Single = ({ item, type }) => {
     target: ref,
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [-250, 250], {
+  const y = useTransform(scrollYProgress, [0, 1], [-350, 250], {
     ease: easeInOut,
     duration: 1,
   });
