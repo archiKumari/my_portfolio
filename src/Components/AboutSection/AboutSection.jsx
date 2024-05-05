@@ -11,14 +11,11 @@ import {
   faNode,
   faGithub,
   faWebflow,
-  faLinux,
-  faWindows,
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faServer,
   faDatabase,
   faMobileScreen,
-  faObjectGroup,
 } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
 
@@ -29,7 +26,6 @@ const AboutSection = () => {
     { icon: faMobileScreen, text: "React Native" },
     { icon: faHtml5, text: "HTML" },
     { icon: faCss3, text: "CSS" },
-    { icon: faObjectGroup, text: "UI/UX" },
   ];
   const backendItems = [
     { icon: faNode, text: "NodeJs" },
@@ -42,10 +38,6 @@ const AboutSection = () => {
     { icon: faWebflow, text: "Webflow" },
     { icon: faFigma, text: "Figma" },
     { icon: null, text: "Photoshop" },
-  ];
-  const osItems = [
-    { icon: faLinux, text: "Linux" },
-    { icon: faWindows, text: "Windows" },
   ];
 
   const scrollToContact = () => {
@@ -81,20 +73,18 @@ const AboutSection = () => {
         <motion.h2 variants={variants}>About Me</motion.h2>
         <motion.p variants={variants}>
           I'm a versatile web developer with expertise in both frontend and
-          backend development. Specializing in crafting captivating user
-          interfaces and robust backend systems,I bring a comprehensive skill
-          set to every project I undertake.In addition to my development work,
-          I'm experienced in UI/UX design using Figma and have proficiency in
-          no-code website development with platforms like Webflow.
+          backend development. So, I bring a comprehensive skill set to every
+          project I undertake. Here are my areas of expertise.
+          Let's connect and discuss how we can collaborate to create something
+          remarkable.
         </motion.p>
-        <motion.p variants={variants}>
-          I'm always on the lookout for new opportunities where I can
-          contribute, learn, and grow. If you have a rewarding opportunity that
-          aligns with my skills and experience, don't hesitate to reach out. I'm
-          eager to collaborate on projects that challenge me and allow me to
-          make a meaningful impact. Let's connect and discuss how we can
-          collaborate to create something remarkable.
-        </motion.p>
+        <motion.ul variants={variants}>
+          <li>UI/UX and Web Design</li>
+          <li>Frontend Development</li>
+          <li>Mobile App Development</li>
+          <li>Full Stack Development</li>
+          <li>No Code Development</li>
+        </motion.ul>
         <motion.button variants={variants} onClick={scrollToContact}>
           Connect
         </motion.button>
@@ -105,7 +95,6 @@ const AboutSection = () => {
         initial="initial"
         whileInView="whileInView"
       >
-        <motion.h2 variants={variants}>My Skills</motion.h2>
         <motion.div variants={variants}>
           <IconsContainer skills={frontendItems} index={1} />
         </motion.div>
@@ -114,9 +103,6 @@ const AboutSection = () => {
         </motion.div>
         <motion.div variants={variants}>
           <IconsContainer skills={toolItems} index={3} />
-        </motion.div>
-        <motion.div variants={variants}>
-          <IconsContainer skills={osItems} index={4} />
         </motion.div>
       </motion.div>
     </div>
