@@ -1,12 +1,11 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { motion } from "framer-motion";
 
 import "./AboutSection.css";
 import { ReactComponent as PhotoshopIcon } from "../../Assets/Logo/photoshop-icon.svg";
 import { ReactComponent as HaskellIcon } from "../../Assets/Logo/haskell-icon.svg";
 
-const IconsContainer = ({ skills, index }) => {
+const IconsContainer = ({ skills}) => {
   return (
     <div
       className="icon-row">

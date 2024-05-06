@@ -96,13 +96,13 @@ const AboutSection = () => {
         whileInView="whileInView"
       >
         <motion.div variants={variants}>
-          <IconsContainer skills={frontendItems} index={1} />
+          <IconsContainer skills={frontendItems}/>
         </motion.div>
         <motion.div variants={variants}>
-          <IconsContainer skills={backendItems} index={2} />
+          <IconsContainer skills={backendItems}/>
         </motion.div>
         <motion.div variants={variants}>
-          <IconsContainer skills={toolItems} index={3} />
+          <IconsContainer skills={toolItems}/>
         </motion.div>
       </motion.div>
     </div>
