@@ -9,14 +9,15 @@ import NavBar from "./Components/NavBar/NavBar";
 import PortfolioSection from "./Components/PortfolioSection/PortfolioSection";
 
 function App() {
+  
   return (
     <motion.div className="main-container">
-      <section id="Homepage">
-        <NavBar />
+      <NavBar />
+      <section id="Home">
         <HeroSection />
       </section>
       <HorizontalDivider />
-      <section id="About Me">
+      <section id="About">
         <AboutSection />
       </section>
       <HorizontalDivider />
