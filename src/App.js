@@ -9,11 +9,10 @@ import NavBar from "./Components/NavBar/NavBar";
 import PortfolioSection from "./Components/PortfolioSection/PortfolioSection";
 
 function App() {
-  
   return (
     <motion.div className="main-container">
       <NavBar />
-      <section id="Home">
+      <section id="/">
         <HeroSection />
       </section>
       <HorizontalDivider />

@@ -22,7 +22,7 @@ const Single = ({ item, type }) => {
     duration: 1,
   });
   return (
-    <section>
+    <section id="Portfolio">
       <div className="container">
         <div className="wrapper">
           <div className="imageContainer" ref={ref}>
