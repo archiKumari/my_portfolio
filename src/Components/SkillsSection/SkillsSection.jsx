@@ -1,7 +1,8 @@
-import SkillCard from "./SkillCard";
-import "./SkillCard.css";
-
 import React from "react";
+import "./SkillsSection.css";
+import { motion } from "framer-motion";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHtml5,
   faCss3,
@@ -9,17 +10,14 @@ import {
   faReact,
   faFigma,
   faNode,
-  faGithub,
   faWebflow,
-  faLinux,
-  faWindows,
 } from "@fortawesome/free-brands-svg-icons";
-import {
-  faServer,
-  faDatabase,
-  faMobileScreen,
-  faObjectGroup,
-} from "@fortawesome/free-solid-svg-icons";
+
+import { ReactComponent as PhotoshopIcon } from "../../Assets/Logo/photoshop-icon.svg";
+import { ReactComponent as HaskellIcon } from "../../Assets/Logo/haskell-icon.svg";
+import { ReactComponent as ExpoIcon } from "../../Assets/Logo/expo-icon.svg";
+import { ReactComponent as PostgresIcon } from "../../Assets/Logo/postgresql-icon.svg";
+import { ReactComponent as ExpressIcon } from "../../Assets/Logo/express-icon.svg";
 
 function SkillsSection() {
   const frontendItems = [
@@ -27,41 +25,93 @@ function SkillsSection() {
     { icon: faCss3, text: "CSS" },
     { icon: faJs, text: "JavaScript" },
     { icon: faReact, text: "React" },
-    { icon: faMobileScreen, text: "React Native" },
-    { icon: faObjectGroup, text: "UI/UX" },
+  ];
+  const mobileItems = [
+    { icon: faReact, text: "React Native" },
+    { icon: null, text: "Expo" },
   ];
   const backendItems = [
     { icon: faNode, text: "NodeJs" },
-    { icon: faServer, text: "Express" },
+    { icon: null, text: "Express" },
     { icon: null, text: "Haskell" },
-    { icon: faDatabase, text: "PostgreSQL" },
+    { icon: null, text: "PostgreSQL" },
   ];
-  const toolItems = [
-    { icon: faGithub, text: "Git" },
-    { icon: faWebflow, text: "Webflow" },
+  const UIItems = [
     { icon: faFigma, text: "Figma" },
     { icon: null, text: "Photoshop" },
   ];
-  const osItems = [
-    { icon: faLinux, text: "Linux" },
-    { icon: faWindows, text: "Windows" },
-  ];
-  return (
-    <>
-      <p className="section-title">SKILLS</p>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "center",
-        }}
+  const noCodeItems = [{ icon: faWebflow, text: "Webflow" }];
+
+  const variants = {
+    initial: {
+      opacity: 0,
+    },
+    animate: {
+      opacity: 1,
+      transition: { staggerChildren: 0.2 },
+    },
+  };
+  const SkillBlock = ({ title, skills }) => {
+    return (
+      <motion.div
+        className="icon-row"
+        variants={variants}
+        initial="initial"
+        animate="animate"
       >
-        <SkillCard skills={frontendItems} cardTitle="Frontend" />
-        <SkillCard skills={backendItems} cardTitle="Backend" />
-        <SkillCard skills={toolItems} cardTitle="Tools" />
-        <SkillCard skills={osItems} cardTitle="OS" />
-      </div>
-    </>
+        <motion.h3 variants={variants}>{title}</motion.h3>
+        {skills.map((item, index) => (
+          <motion.div
+            className="icon-container"
+            key={index}
+            variants={variants}
+          >
+            {item.text === "Haskell" ? (
+              <HaskellIcon />
+            ) : item.text === "Photoshop" ? (
+              <PhotoshopIcon />
+            ) : item.text === "Expo" ? (
+              <ExpoIcon />
+            ) : item.text === "PostgreSQL" ? (
+              <PostgresIcon />
+            ) : item.text === "Express" ? (
+              <ExpressIcon />
+            ) : (
+              <FontAwesomeIcon icon={item.icon} />
+            )}
+            <motion.span variants={variants}>{item.text}</motion.span>
+          </motion.div>
+        ))}
+      </motion.div>
+    );
+  };
+
+  return (
+    <div className="skill-container">
+      <motion.div
+        className="inner-container"
+        variants={variants}
+        initial="initial"
+        animate="animate"
+      >
+        <h2>What I can do</h2>
+        <motion.div variants={variants}>
+          <SkillBlock title="Frontend Development" skills={frontendItems} />
+        </motion.div>
+        <motion.div variants={variants}>
+          <SkillBlock title="Mobile App Development" skills={mobileItems} />
+        </motion.div>
+        <motion.div variants={variants}>
+          <SkillBlock title="UI/UX and Web Design" skills={UIItems} />
+        </motion.div>
+        <motion.div variants={variants}>
+          <SkillBlock title="Backend Development" skills={backendItems} />
+        </motion.div>
+        <motion.div variants={variants}>
+          <SkillBlock title="No Code Development" skills={noCodeItems} />
+        </motion.div>
+      </motion.div>
+    </div>
   );
 }
 

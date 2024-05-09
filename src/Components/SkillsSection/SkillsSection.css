@@ -1,0 +1,56 @@
+.skill-container {
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+
+  .inner-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 30px;
+    margin: auto;
+
+    h2 {
+      color: orange;
+      text-align: left;
+      font-size: 60px;
+    }
+
+    .icon-row {
+      display: flex;
+    }
+
+    h3 {
+      font-size: 24px;
+      font-weight: normal;
+      width: 30%;
+      align-self: center;
+    }
+
+    .icon-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: left;
+      max-width: 155px;
+      margin-right: 8px;
+      padding: 5px;
+      gap: 0;
+      border-radius: 20px;
+      border: 0.1px solid rgba(255, 255, 255, 0.1);
+      background-color: rgba(255, 255, 255, 0.03);
+
+      svg {
+        width: 32px;
+        height: 32px;
+        margin-left: 3px;
+        margin-right: 10px;
+      }
+
+      span {
+        font-size: 16px;
+      }
+    }
+  }
+}
