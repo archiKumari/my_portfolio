@@ -45,23 +45,22 @@ function SkillsSection() {
   const variants = {
     initial: {
       opacity: 0,
+      y:10,
     },
     animate: {
+      y:0,
       opacity: 1,
-      transition: { staggerChildren: 0.2 },
+      transition: {staggerChildren: 0.4, type:"spring" },
     },
   };
   const SkillBlock = ({ title, skills }) => {
     return (
-      <motion.div
+      <div
         className="icon-row"
-        variants={variants}
-        initial="initial"
-        animate="animate"
       >
-        <motion.h3 variants={variants}>{title}</motion.h3>
+        <h3 variants={variants}>{title}</h3>
         {skills.map((item, index) => (
-          <motion.div
+          <div
             className="icon-container"
             key={index}
             variants={variants}
@@ -79,10 +78,10 @@ function SkillsSection() {
             ) : (
               <FontAwesomeIcon icon={item.icon} />
             )}
-            <motion.span variants={variants}>{item.text}</motion.span>
-          </motion.div>
+            <span>{item.text}</span>
+          </div>
         ))}
-      </motion.div>
+      </div>
     );
   };
 
@@ -92,20 +91,20 @@ function SkillsSection() {
         className="inner-container"
         variants={variants}
         initial="initial"
-        animate="animate"
+        whileInView="animate"
       >
         <h2>What I can do</h2>
         <motion.div variants={variants}>
           <SkillBlock title="Frontend Development" skills={frontendItems} />
         </motion.div>
         <motion.div variants={variants}>
+          <SkillBlock title="Backend Development" skills={backendItems} />
+        </motion.div>
+        <motion.div variants={variants}>
           <SkillBlock title="Mobile App Development" skills={mobileItems} />
         </motion.div>
         <motion.div variants={variants}>
           <SkillBlock title="UI/UX and Web Design" skills={UIItems} />
-        </motion.div>
-        <motion.div variants={variants}>
-          <SkillBlock title="Backend Development" skills={backendItems} />
         </motion.div>
         <motion.div variants={variants}>
           <SkillBlock title="No Code Development" skills={noCodeItems} />
