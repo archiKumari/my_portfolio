@@ -1,110 +1,88 @@
-import IconsContainer from "./IconsContainer";
-import "./AboutSection.css";
-
 import { React } from "react";
-import {
-  faHtml5,
-  faCss3,
-  faJs,
-  faReact,
-  faFigma,
-  faNode,
-  faGithub,
-  faWebflow,
-} from "@fortawesome/free-brands-svg-icons";
-import {
-  faServer,
-  faDatabase,
-  faMobileScreen,
-} from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
 
-const AboutSection = () => {
-  const frontendItems = [
-    { icon: faJs, text: "JavaScript" },
-    { icon: faReact, text: "React" },
-    { icon: faMobileScreen, text: "React Native" },
-    { icon: faHtml5, text: "HTML" },
-    { icon: faCss3, text: "CSS" },
-  ];
-  const backendItems = [
-    { icon: faNode, text: "NodeJs" },
-    { icon: faServer, text: "Express" },
-    { icon: null, text: "Haskell" },
-    { icon: faDatabase, text: "PostgreSQL" },
-  ];
-  const toolItems = [
-    { icon: faGithub, text: "Git" },
-    { icon: faWebflow, text: "Webflow" },
-    { icon: faFigma, text: "Figma" },
-    { icon: null, text: "Photoshop" },
-  ];
+import "./AboutSection.css";
 
+const AboutSection = () => {
   const scrollToContact = () => {
     const contactSection = document.getElementById("Contact");
     contactSection.scrollIntoView({ behavior: "smooth" });
   };
 
   const variants = {
-    initial: {
+    left: {
       x: -500,
-      y: 50,
       opacity: 0,
     },
-    whileInView: {
+    right: {
+      x: 500,
+      opacity: 0,
+    },
+    animate: {
       x: 0,
-      y: 0,
       opacity: 1,
       transition: {
         duration: 1,
-        staggerChildren: 0.1,
       },
     },
   };
 
   return (
     <div className="about-container">
-      <motion.div
-        className="text-container"
-        variants={variants}
-        initial="initial"
-        whileInView="whileInView"
-      >
-        <motion.h2 variants={variants}>About Me</motion.h2>
-        <motion.p variants={variants}>
-          I'm a versatile web developer with expertise in both frontend and
-          backend development. So, I bring a comprehensive skill set to every
-          project I undertake. Here are my areas of expertise.
-          Let's connect and discuss how we can collaborate to create something
-          remarkable.
-        </motion.p>
-        <motion.ul variants={variants}>
-          <li>UI/UX and Web Design</li>
-          <li>Frontend Development</li>
-          <li>Mobile App Development</li>
-          <li>Full Stack Development</li>
-          <li>No Code Development</li>
-        </motion.ul>
-        <motion.button variants={variants} onClick={scrollToContact}>
-          Connect
-        </motion.button>
-      </motion.div>
-      <motion.div
-        className="icon-container"
-        variants={variants}
-        initial="initial"
-        whileInView="whileInView"
-      >
-        <motion.div variants={variants}>
-          <IconsContainer skills={frontendItems}/>
+      <h2 variants={variants}>About Me</h2>
+      <div className="wrapper" >
+        <motion.div
+          className="left-container"
+          variants={variants}
+          initial="left"
+          whileInView="animate"
+        >
+          <p>
+            Crafting digital experiences is my passion, and I've honed my skills
+            through a range of diverse projects. With a focus on frontend and
+            full-stack development, I've contibuted in the creation of dynamic
+            web and mobile applications that prioritize user experience and
+            technical excellence. My journey as a developer has equipped me with
+            the proficiency and confidence to approach any project with
+            determination and skill.
+          </p>
+          <p>
+            I'm always on the lookout for new opportunities where I can
+            contribute, learn, and grow. If you have an opportunity that aligns
+            with my skills and experience, let's connect and discuss how we can
+            collaborate to create something remarkable.
+          </p>
+          <button variants={variants} onClick={scrollToContact}>
+            Connect
+          </button>
         </motion.div>
-        <motion.div variants={variants}>
-          <IconsContainer skills={backendItems}/>
+        <motion.div className="right-container" variants={variants} initial="right" whileInView="animate">
+          <div className="design">
+            <div className="circle" />
+            <div className="line" />
+            <div className="circle" />
+            <div className="line" />
+            <div className="circle" />
+          </div>
+          <div className="job-text">
+            <div className="single-text">
+              <p className="position">Full Stack Developer</p>
+              <p className="company">Maa Gyan Services</p>
+              <p className="duration">May 2023 - Present</p>
+            </div>
+            <div className="single-text">
+              <p className="position">Mobile Software Developer</p>
+              <p className="company">Petdrifts</p>
+              <p className="duration">January 2023 - April 2023</p>
+            </div>
+            <div className="single-text">
+              <p className="position">Frontend Developer</p>
+              <p className="company">Betiyan Nidhi Limited</p>
+              <p className="duration">August 2022 - December 2022</p>
+            </div>
+          </div>
         </motion.div>
-        <motion.div variants={variants}>
-          <IconsContainer skills={toolItems}/>
-        </motion.div>
-      </motion.div>
+      </div>
     </div>
   );
 };
