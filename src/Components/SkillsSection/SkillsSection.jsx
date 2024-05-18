@@ -39,32 +39,45 @@ function SkillsSection() {
   const UIItems = [
     { icon: faFigma, text: "Figma" },
     { icon: null, text: "Photoshop" },
+    { icon: faWebflow, text: "Webflow" },
   ];
-  const noCodeItems = [{ icon: faWebflow, text: "Webflow" }];
+
+  const scrollToPortfolio = () => {
+    const portfolioSection = document.getElementById("Portfolio");
+    portfolioSection.scrollIntoView({ behavior: "smooth" });
+  };
 
   const variants = {
     initial: {
       opacity: 0,
-      y:10,
+      y: 10,
     },
     animate: {
-      y:0,
+      y: 0,
       opacity: 1,
-      transition: {staggerChildren: 0.4, type:"spring" },
+      transition: { staggerChildren: 0.4, type: "spring" },
     },
   };
+
+  const overlayVariants = {
+    initial: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: { duration: 0.5 },
+    }
+  };
+
   const SkillBlock = ({ title, skills }) => {
     return (
-      <div
-        className="icon-row"
-      >
+      <div className="icon-row">
+        <motion.div className="overlay" variants={overlayVariants} initial="initial" whileHover="visible" whileTap="visible">
+          <button onClick={scrollToPortfolio}>See Work</button>
+        </motion.div>
         <h3 variants={variants}>{title}</h3>
         {skills.map((item, index) => (
-          <div
-            className="icon-container"
-            key={index}
-            variants={variants}
-          >
+          <div className="icon-container" key={index} variants={variants}>
             {item.text === "Haskell" ? (
               <HaskellIcon />
             ) : item.text === "Photoshop" ? (
@@ -87,13 +100,13 @@ function SkillsSection() {
 
   return (
     <div className="skill-container">
+      <h2>What I can do</h2>
       <motion.div
         className="inner-container"
         variants={variants}
         initial="initial"
         whileInView="animate"
       >
-        <h2>What I can do</h2>
         <motion.div variants={variants}>
           <SkillBlock title="Frontend Development" skills={frontendItems} />
         </motion.div>
@@ -104,10 +117,7 @@ function SkillsSection() {
           <SkillBlock title="Mobile App Development" skills={mobileItems} />
         </motion.div>
         <motion.div variants={variants}>
-          <SkillBlock title="UI/UX and Web Design" skills={UIItems} />
-        </motion.div>
-        <motion.div variants={variants}>
-          <SkillBlock title="No Code Development" skills={noCodeItems} />
+          <SkillBlock title="UI/UX and No Code Development" skills={UIItems} />
         </motion.div>
       </motion.div>
     </div>

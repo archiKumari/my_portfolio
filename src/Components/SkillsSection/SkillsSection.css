@@ -1,55 +1,78 @@
 .skill-container {
   height: 100%;
+  width: 90%;
   margin: auto;
+  padding: 5rem;
+  gap: 2rem;
   display: flex;
   flex-direction: column;
 
+  h2 {
+    color: rebeccapurple;
+    text-align: left;
+    font-size: 3.8rem;
+    letter-spacing: 1.5px;
+  }
+
   .inner-container {
     display: flex;
-    flex-direction: column;
-    width: 80%;
-    gap: 30px;
-    margin: auto;
-
-    h2 {
-      color: orange;
-      text-align: left;
-      font-size: 60px;
-      letter-spacing: 1.5px;
-    }
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
 
     .icon-row {
       display: flex;
-      gap: 30px;
-    }
-
-    h3 {
-      font-size: 24px;
-      font-weight: normal;
-      width: 30%;
-      align-self: center;
-    }
-
-    .icon-container {
-      flex: 1;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: left;
-      max-width: 155px;
-      padding: 5px 8px;
-      gap: 8px;
-      border-radius: 20px;
-      border: 0.1px solid rgba(255, 255, 255, 0.1);
-      background-color: rgba(255, 255, 255, 0.03);
-
-      svg {
-        width: 32px;
-        height: 32px;
+      flex-direction: column;
+      position: relative;
+      gap: 1.3rem;
+      height: 100%;
+      width: 14rem;
+      
+      .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 0.5rem;
+      
+        button {
+          background-color: orange;
+          padding: 0.5rem;
+          font-size: 1rem;
+          font-weight: 500;
+          border:none;
+          border-radius: 0.5rem;
+          color: rgb(17,17,50);
+          cursor: pointer;
+        }
       }
 
-      span {
-        font-size: 16px;
+      h3 {
+        font-size: 1.5rem;
+        font-weight: normal;
+      }
+
+      .icon-container {
+        display: flex;
+        flex-direction: row;
+        padding: 0.3rem 0.5rem;
+        align-items: center;
+        gap: 0.5rem;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.05);
+
+        svg {
+          width: 2rem;
+          height: 2rem;
+        }
+
+        span {
+          font-size: 16px;
+        }
       }
     }
   }
