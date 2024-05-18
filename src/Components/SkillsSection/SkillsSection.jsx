@@ -73,7 +73,7 @@ function SkillsSection() {
     return (
       <div className="icon-row">
         <motion.div className="overlay" variants={overlayVariants} initial="initial" whileHover="visible" whileTap="visible">
-          <button onClick={scrollToPortfolio}>See Work</button>
+          <button onClick={scrollToPortfolio}>Explore</button>
         </motion.div>
         <h3 variants={variants}>{title}</h3>
         {skills.map((item, index) => (
