@@ -57,6 +57,9 @@ function SkillsSection() {
       opacity: 1,
       transition: { staggerChildren: 0.4, type: "spring" },
     },
+    hover: {
+      opacity: 0.3,
+    }
   };
 
   const overlayVariants = {
@@ -75,9 +78,9 @@ function SkillsSection() {
         <motion.div className="overlay" variants={overlayVariants} initial="initial" whileHover="visible" whileTap="visible">
           <button onClick={scrollToPortfolio}>Explore</button>
         </motion.div>
-        <h3 variants={variants}>{title}</h3>
+        <h3 variants={variants} whileHover="hover">{title}</h3>
         {skills.map((item, index) => (
-          <div className="icon-container" key={index} variants={variants}>
+          <div className="icon-container" key={index} variants={variants} whileHover="hover">
             {item.text === "Haskell" ? (
               <HaskellIcon />
             ) : item.text === "Photoshop" ? (
