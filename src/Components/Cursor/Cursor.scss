@@ -1,3 +1,5 @@
+@import "../../App.scss";
+
 .cursor {
   position: fixed;
   top: 0;
@@ -12,10 +14,18 @@
   pointer-events: none;
   z-index: 9999;
   transform: translate(-50%, -50%);
-  transition: transform 0.1s ease-in-out; 
+  transition: transform 0.1s ease-in-out;
+
+  @include mobile {
+    display: none;
+  }
+
+  @include tablet {
+    display: none;
+  }
   
   .inner-cursor {
-    width:  18px;
+    width: 18px;
     height: 18px;
     border-radius: 50%;
     background-color: orange;
