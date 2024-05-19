@@ -22,7 +22,9 @@ const Cursor = () => {
       className="cursor"
       animate={{ x: position.x + 10, y: position.y + 10 }}
       transition={{ type: "spring", stiffness: 100, damping: 40 }}
-    ></motion.div>
+    >
+      <motion.div className="inner-cursor"></motion.div>
+    </motion.div>
   );
 };
 
