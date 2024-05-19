@@ -1,16 +1,18 @@
 import { motion } from "framer-motion";
 
 import "./App.css";
+import SideBar from "./Components/SideBar/SideBar"
+import NavBar from "./Components/NavBar/NavBar";
 import HeroSection from "./Components/HeroSection/HeroSection";
 import AboutSection from "./Components/AboutSection/AboutSection";
-import Contact from "./Components/ContactSection/Contact";
-import NavBar from "./Components/NavBar/NavBar";
-import PortfolioSection from "./Components/PortfolioSection/PortfolioSection";
 import SkillsSection from "./Components/SkillsSection/SkillsSection"
+import PortfolioSection from "./Components/PortfolioSection/PortfolioSection";
+import Contact from "./Components/ContactSection/Contact";
 
 function App() {
   return (
     <motion.div className="main-container">
+      <SideBar/>
       <NavBar />
       <section id="/">
         <HeroSection />

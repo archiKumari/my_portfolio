@@ -1,10 +1,7 @@
 .sidebar {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  color: black;
+  color: white;
 
   .bg {
     z-index: 999;
@@ -13,7 +10,9 @@
     left: 0;
     bottom: 0;
     width: 350px;
-    background: white;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
 
     .links {
       position: absolute;
