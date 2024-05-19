@@ -1,3 +1,5 @@
+@import "../../App.scss";
+
 .navbar {
   height: 60px;
   z-index: 100;
@@ -8,11 +10,22 @@
 
   .wrapper {
     height: 100%;
-    max-width: 85%;
+    max-width: 90%;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include mobile {
+      justify-content: flex-end;
+      margin-top: 5px;
+    }
+  }
+
+  a {
+    @include mobile {
+      display: none;
+    }
   }
 
   .links {
@@ -25,6 +38,9 @@
 
     a {
       position: relative;
+      @include mobile {
+        display: none;
+      }
     }
 
     span {
@@ -53,6 +69,11 @@
       font-weight: 600;
       border: none;
       border-radius: 10px;
+
+      @include mobile {
+        font-size: 12px;
+        margin-top: 8px;
+      }
     }
   }
 }

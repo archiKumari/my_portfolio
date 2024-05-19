@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 
-import "./NavBar.css";
+import "./NavBar.scss";
 
 const NavBar = () => {
   const [activeLink, setActiveLink] = useState(null);
