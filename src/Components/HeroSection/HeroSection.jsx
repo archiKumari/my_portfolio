@@ -37,9 +37,19 @@ const HeroSection = () => {
       transition: {
         duration: 20,
         repeat: Infinity,
-        repeatType: "mirror"
+        repeatType: "mirror",
       },
     },
+  };
+
+  const scrollToContact = () => {
+    const contactSection = document.getElementById("Contact");
+    contactSection.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToPortfolio = () => {
+    const portfolioSection = document.getElementById("Portfolio");
+    portfolioSection.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -52,14 +62,15 @@ const HeroSection = () => {
           animate="animate"
         >
           <motion.h2 variants={textVariants}>ARCHI KUMARI</motion.h2>
-          <motion.h1 variants={textVariants}>
-            Web, Mobile and Haskell Developer{" "}
-          </motion.h1>
+          <motion.h1 variants={textVariants}>Web, Mobile and</motion.h1>
+          <motion.h1 variants={textVariants}>Haskell Developer</motion.h1>
           <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants}>
+            <motion.button variants={textVariants} onClick={scrollToPortfolio} className="secondary">
               See Latest Works
             </motion.button>
-            <motion.button variants={textVariants} style={{color:"rgb(17, 17, 50)",backgroundColor:"white",fontWeight:"600"}}>Contact Me</motion.button>
+            <motion.button variants={textVariants} onClick={scrollToContact} className="primary">
+              Contact Me
+            </motion.button>
           </motion.div>
           <motion.img
             src={scrollImg}
@@ -69,7 +80,12 @@ const HeroSection = () => {
           />
         </motion.div>
       </div>
-      <motion.div className="sliding-text-container" variants={sliderVariants} initial="initial" animate="animate">
+      <motion.div
+        className="sliding-text-container"
+        variants={sliderVariants}
+        initial="initial"
+        animate="animate"
+      >
         Web Mobile Haskell UI UX
       </motion.div>
     </div>

@@ -7,11 +7,10 @@
 .wrapper {
   max-width: 1366px;
   height: 100%;
-  margin: auto;
 
   .text-container {
     height: 100%;
-    width: 65%;
+    max-width: 70%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -32,14 +31,26 @@
   }
 
   .buttons {
+    z-index: 10;
     button {
-      padding: 12px;
-      border: 1px solid white;
+      padding: 10px;
+      font-weight: 550;
       border-radius: 10px;
-      background-color: transparent;
-      color: white;
       margin-right: 20px;
-      font-weight: 300;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    
+    .primary {
+      background-color: orange;
+      color: rgb(17, 17, 50);
+      border: none;
+    }
+
+    .secondary {
+      border: 0.5px solid white;
+      color: white;
+      background-color: rgba(255,255,255,0.2);
     }
   }
 
