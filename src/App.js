@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import Cursor from "./Components/Cursor/Cursor";
 import SideBar from "./Components/SideBar/SideBar";
 import NavBar from "./Components/NavBar/NavBar";
