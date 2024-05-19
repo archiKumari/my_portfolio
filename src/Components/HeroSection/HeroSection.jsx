@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import "./HeroSection.css";
+import "./HeroSection.scss";
 import scrollImg from "../../Assets/scroll.png";
 
 const HeroSection = () => {

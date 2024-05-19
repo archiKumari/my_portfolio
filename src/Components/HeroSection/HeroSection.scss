@@ -1,3 +1,5 @@
+@import "../../App.scss";
+
 .hero {
   height: 100%;
   background: linear-gradient(180deg, rgb(12, 12, 29), rgb(17, 17, 50));
@@ -5,7 +7,6 @@
 }
 
 .wrapper {
-  max-width: 1366px;
   height: 100%;
 
   .text-container {
@@ -16,18 +17,42 @@
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-  }
 
-  h2 {
-    font-size: 30px;
-    color: rebeccapurple;
-    letter-spacing: 10px;
-    margin: 0;
-  }
+    @include tablet {
+      max-width: 100%;
+      align-items: center;
+      text-align: center;
+    }
 
-  h1 {
-    font-size: 75px;
-    margin: 0;
+    @include mobile {
+      max-width: 100%;
+      align-items: center;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 30px;
+      color: rebeccapurple;
+      letter-spacing: 10px;
+      margin: 0;
+
+      @include mobile {
+        font-size: 20px;
+      }
+    }
+
+    h1 {
+      font-size: 75px;
+      margin: 0;
+
+      @include tablet {
+        font-size: 65px;
+      }
+
+      @include mobile {
+        font-size: 40px;
+      }
+    }
   }
 
   .buttons {
@@ -39,8 +64,12 @@
       margin-right: 20px;
       font-size: 15px;
       cursor: pointer;
+      
+      @include mobile {
+        font-size: 12px;
+      }
     }
-    
+
     .primary {
       background-color: orange;
       color: rgb(17, 17, 50);
@@ -50,7 +79,7 @@
     .secondary {
       border: 0.5px solid white;
       color: white;
-      background-color: rgba(255,255,255,0.2);
+      background-color: rgba(255, 255, 255, 0.2);
     }
   }
 
@@ -67,4 +96,8 @@
   color: rgb(255, 255, 255, 0.09);
   width: 50%;
   font-weight: bold;
+
+  @include mobile {
+    bottom: -130px;
+  }
 }
