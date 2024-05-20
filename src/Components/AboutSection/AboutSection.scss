@@ -34,7 +34,6 @@
   .wrapper {
     display: flex;
     flex-direction: row;
-    border: 2px solid red;
 
     @include mobile {
       flex-direction: column;
