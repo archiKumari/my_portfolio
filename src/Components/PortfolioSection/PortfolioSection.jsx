@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import "./PortfolioSection.css";
+import "./PortfolioSection.scss";
 import {
   easeInOut,
   motion,
