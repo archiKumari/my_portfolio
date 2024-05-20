@@ -1,17 +1,41 @@
+@import "../../App.scss";
+
 .skill-container {
   height: 100%;
-  width: 90%;
+  max-width: 90%;
   margin: auto;
   padding: 5rem;
   gap: 2rem;
   display: flex;
   flex-direction: column;
+  overflow: scroll;
+
+  @include mobile {
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @include tablet {
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+  }
 
   h2 {
     color: rebeccapurple;
     text-align: left;
     font-size: 3.8rem;
     letter-spacing: 1.5px;
+
+    @include tablet {
+      font-size: 2rem;
+    }
+
+    @include tablet {
+      font-size: 4rem;
+    }
   }
 
   .inner-container {
@@ -20,7 +44,14 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 3rem;
+    
+    @include mobile {
+      gap: 2rem;
+    }
 
+    @include tablet {
+      gap: 3rem;
+    }
     .icon-row {
       display: flex;
       flex-direction: column;
@@ -28,6 +59,10 @@
       gap: 1.3rem;
       height: 100%;
       width: 14rem;
+
+      @include mobile {
+        width: 7rem;
+      }
       
       .overlay {
         position: absolute;
@@ -36,7 +71,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(255, 255, 255, 0.2);
         border-radius: 0.5rem;
       
         button {
@@ -54,6 +89,10 @@
       h3 {
         font-size: 1.5rem;
         font-weight: normal;
+
+        @include mobile {
+          font-size: 0.7rem;
+        }
       }
 
       .icon-container {
@@ -68,10 +107,19 @@
         svg {
           width: 2rem;
           height: 2rem;
+
+          @include mobile {
+            width: 1rem;
+            height: 1rem;
+          }
         }
 
         span {
           font-size: 16px;
+
+          @include mobile {
+            font-size: 10px;
+          }
         }
       }
     }

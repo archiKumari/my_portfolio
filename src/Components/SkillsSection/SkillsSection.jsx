@@ -1,5 +1,5 @@
 import React from "react";
-import "./SkillsSection.css";
+import "./SkillsSection.scss";
 import { motion } from "framer-motion";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
