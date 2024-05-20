@@ -1,7 +1,7 @@
 import { React } from "react";
 import { motion } from "framer-motion";
 
-import "./AboutSection.css";
+import "./AboutSection.scss";
 
 const AboutSection = () => {
   const scrollToContact = () => {
@@ -11,11 +11,11 @@ const AboutSection = () => {
 
   const variants = {
     left: {
-      x: -500,
+      x: -100,
       opacity: 0,
     },
     right: {
-      x: 500,
+      x: 100,
       opacity: 0,
     },
     animate: {
