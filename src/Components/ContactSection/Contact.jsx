@@ -1,7 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
-import "./Contact.css";
+import "./Contact.scss";
 import discord from "../../Assets/Logo/discord.svg";
 import slack from "../../Assets/Logo/slack.svg";
 import github from "../../Assets/Logo/github.svg";
@@ -34,41 +34,39 @@ const Contact = () => {
       initial="initial"
       whileInView="animate"
     >
-        <motion.div className="left-container">
-          <motion.h1>Let's work together</motion.h1>
-          <motion.p>
-            I'm always available to chat about potential collaborations. Drop me
-            a message here or reach out through any of these channels, I look
-            forward to connecting with you!
-          </motion.p>
-          <motion.div>
-            <a href="https://join.slack.com/t/archi-kumari/shared_invite/zt-2gbyqcv6q-26j51G4ZXH4VPe0K7wfJJg">
-              <img src={slack} alt="" />
-            </a>
-            <a href="https://discord.gg/tPBmV4QdnW">
-              <img src={discord} alt="" />
-            </a>
-            <a href="https://github.com/archiKumari">
-              <img src={github} alt="" />
-            </a>
-            <a href="https://www.linkedin.com/in/archi-kumari-55a085241/">
-              <img src={linkedin} alt="" />
-            </a>
-            <a href="mailto:archikumari97@gmail.com">
-              <img src={gmail} alt="" />
-            </a>
-          </motion.div>
+      <motion.div className="left-container">
+        <motion.h1>Let's work together</motion.h1>
+        <motion.p>
+          I'm always available to chat about potential collaborations. Drop me a
+          mail or reach out through any of these channels. I look forward to connecting with you!</motion.p>
+        <motion.div>
+          <a href="https://join.slack.com/t/archi-kumari/shared_invite/zt-2gbyqcv6q-26j51G4ZXH4VPe0K7wfJJg">
+            <img src={slack} alt="" />
+          </a>
+          <a href="https://discord.gg/tPBmV4QdnW">
+            <img src={discord} alt="" />
+          </a>
+          <a href="https://github.com/archiKumari">
+            <img src={github} alt="" />
+          </a>
+          <a href="https://www.linkedin.com/in/archi-kumari-55a085241/">
+            <img src={linkedin} alt="" />
+          </a>
+          <a href="mailto:archikumari97@gmail.com">
+            <img src={gmail} alt="" />
+          </a>
         </motion.div>
-        <div className="form-container">
-          <motion.div ref={ref} className="phoneSvg">
-            <svg width="420px" height="420px" viewBox="0 0 32.666 32.666">
-              <motion.path
-                strokeWidth={0.2}
-                fill="none"
-                initial={{ pathLength: 0 }}
-                whileInView={isInView && { pathLength: 1 }}
-                transition={{ duration: 3 }}
-                d="M28.189,16.504h-1.666c0-5.437-4.422-9.858-9.856-9.858l-0.001-1.664C23.021,4.979,28.189,10.149,28.189,16.504z
+      </motion.div>
+      <div className="form-container">
+        <motion.div ref={ref} className="svg-container">
+          <svg className="phone-svg" viewBox="0 0 32.666 32.666">
+            <motion.path
+              strokeWidth={0.2}
+              fill="none"
+              initial={{ pathLength: 0 }}
+              whileInView={isInView && { pathLength: 1 }}
+              transition={{ duration: 3 }}
+              d="M28.189,16.504h-1.666c0-5.437-4.422-9.858-9.856-9.858l-0.001-1.664C23.021,4.979,28.189,10.149,28.189,16.504z
             M16.666,7.856L16.665,9.52c3.853,0,6.983,3.133,6.981,6.983l1.666-0.001C25.312,11.735,21.436,7.856,16.666,7.856z M16.333,0
             C7.326,0,0,7.326,0,16.334c0,9.006,7.326,16.332,16.333,16.332c0.557,0,1.007-0.45,1.007-1.006c0-0.559-0.45-1.01-1.007-1.01
             c-7.896,0-14.318-6.424-14.318-14.316c0-7.896,6.422-14.319,14.318-14.319c7.896,0,14.317,6.424,14.317,14.319
@@ -81,10 +79,10 @@ const Contact = () => {
             c1.041,1.228,2.127,2.416,3.245,3.576l-0.006,0.004c0.031,0.031,0.063,0.06,0.095,0.09c0.03,0.031,0.059,0.062,0.088,0.095
             l0.006-0.006c1.16,1.118,2.535,2.765,4.769,4.255c4.703,3.141,8.312,2.264,10.438,1.098c3.67-2.021,5.312-6.338,5.312-9.719
             C32.666,7.326,25.339,0,16.333,0z"
-              />
-            </svg>
-          </motion.div>
-        </div>
+            />
+          </svg>
+        </motion.div>
+      </div>
     </motion.div>
   );
 };
