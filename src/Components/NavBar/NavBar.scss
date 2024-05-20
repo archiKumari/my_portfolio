@@ -10,7 +10,7 @@
 
   .wrapper {
     height: 100%;
-    max-width: 90%;
+    max-width: 80%;
     margin: auto;
     display: flex;
     align-items: center;
@@ -19,6 +19,12 @@
     @include mobile {
       justify-content: flex-end;
       margin-top: 5px;
+    }
+
+    @include tablet {
+      max-width: 90%;
+      margin-top: 10px;
+      justify-content: flex-end;
     }
   }
 
