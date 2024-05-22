@@ -79,6 +79,14 @@
       border: none;
       border-radius: 10px;
 
+      a {
+        color: inherit;
+        text-decoration: none;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+      }
+      
       @include mobile {
         font-size: 12px;
         margin-top: 8px;

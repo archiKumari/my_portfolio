@@ -19,7 +19,10 @@ const NavBar = () => {
 
       sections.forEach((section) => {
         const rect = section.getBoundingClientRect();
-        if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+        if (
+          rect.top <= window.innerHeight / 2 &&
+          rect.bottom >= window.innerHeight / 2
+        ) {
           currentSectionId = section.id;
         }
       });
@@ -32,7 +35,6 @@ const NavBar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
 
   return (
     <div className="navbar">
@@ -64,7 +66,9 @@ const NavBar = () => {
             </a>
           ))}
           <button>
-            <p>Download CV</p>
+            <a href="/cv.pdf" download="Archi_Kumari_CV.pdf">
+              Download CV
+            </a>
           </button>
         </div>
       </div>
