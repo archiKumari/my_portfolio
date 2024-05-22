@@ -1,5 +1,16 @@
 @import "../../App.scss";
 
+:root {
+  --clip-path-position: circle(30px at 50px 50px);
+  --clip-path-position-opened: circle(1200px at 50px 50px);
+}
+
+@include mobile {
+  :root {
+    --clip-path-position: circle(30px at calc(100% - 30px) 30px);
+    --clip-path-position-opened: circle(1200px at calc(100% - 30px) 30px);
+  }
+}
 
 .sidebar {
   display: flex;
@@ -16,6 +27,7 @@
     background-color: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
+    clip-path: var(--clip-path-position);
 
     @include mobile {
       width: 50%;

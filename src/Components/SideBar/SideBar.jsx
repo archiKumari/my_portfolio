@@ -9,14 +9,14 @@ const SideBar = () => {
   const [isOpen, setOpen] = useState(false);
   const variants = {
     opened: {
-      clipPath: "circle(1200px at 50px 50px)",
+      clipPath: "var(--clip-path-position-opened)",
       transition: {
         type: "spring",
         stiffness: 20,
       },
     },
     closed: {
-      clipPath: "circle(30px at 50px 50px)",
+      clipPath: "var(--clip-path-position)",
       transition: {
         delay:0.5,
         type: "spring",
