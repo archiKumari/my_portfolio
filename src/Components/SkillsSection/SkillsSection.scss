@@ -30,11 +30,11 @@
     letter-spacing: 1.5px;
 
     @include tablet {
-      font-size: 2rem;
+      font-size: 4rem;
     }
 
-    @include tablet {
-      font-size: 4rem;
+    @include mobile {
+      font-size: 3rem;
     }
   }
 
