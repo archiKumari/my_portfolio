@@ -36,7 +36,7 @@ const Single = ({ item, type }) => {
                 <Badge text={item} />
               ))}
             </div>
-            <button>See Details</button>
+            <button>View Details</button>
           </motion.div>
         </div>
       </div>
