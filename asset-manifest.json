@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5433fbd5.css",
+    "main.js": "/static/js/main.8c64b83a.js",
+    "static/js/453.acca0757.chunk.js": "/static/js/453.acca0757.chunk.js",
+    "static/media/image1.png": "/static/media/image1.35f950bbef3ec22690ad.png",
+    "static/media/screen1.png": "/static/media/screen1.4479e7f4332621442b48.png",
+    "static/media/Screen1.png": "/static/media/Screen1.1136b5191baa8bba9f90.png",
+    "static/media/github.svg": "/static/media/github.b2294bccaa20da50b7d58419f07c0892.svg",
+    "static/media/postgresql-icon.svg": "/static/media/postgresql-icon.57c9cd8573fcd7c97d3aa731c74108e6.svg",
+    "static/media/expo-icon.svg": "/static/media/expo-icon.c1ecacd6d2829c9ea127d8a8aeaad0ed.svg",
+    "static/media/photoshop-icon.svg": "/static/media/photoshop-icon.b27091a71f42f3455e2bcf4b9bacc66b.svg",
+    "static/media/discord.svg": "/static/media/discord.ac5800a4bfcfa04ceea7bd082d65bcad.svg",
+    "static/media/express-icon.svg": "/static/media/express-icon.d9b37e7a4ba61ab2b42fa2b2227fdcff.svg",
+    "static/media/haskell-icon.svg": "/static/media/haskell-icon.a864ba1a195dfb61cddad81f60db253a.svg",
+    "static/media/slack.svg": "/static/media/slack.b57cc4b9168913392236e1abe9207490.svg",
+    "index.html": "/index.html",
+    "static/media/gmail.svg": "/static/media/gmail.e1bc2ceb745debf9361ad2160a79823a.svg",
+    "static/media/linkedIn.svg": "/static/media/linkedIn.ada11cda991129bc91b79d2c7cee1066.svg",
+    "main.5433fbd5.css.map": "/static/css/main.5433fbd5.css.map",
+    "main.8c64b83a.js.map": "/static/js/main.8c64b83a.js.map",
+    "453.acca0757.chunk.js.map": "/static/js/453.acca0757.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5433fbd5.css",
+    "static/js/main.8c64b83a.js"
+  ]
+}
