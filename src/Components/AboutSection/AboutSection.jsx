@@ -30,7 +30,7 @@ const AboutSection = () => {
   return (
     <div className="about-container">
       <h2 variants={variants}>About Me</h2>
-      <div className="wrapper" >
+      <div className="wrapper">
         <motion.div
           className="left-container"
           variants={variants}
@@ -38,13 +38,11 @@ const AboutSection = () => {
           whileInView="animate"
         >
           <p>
-            Crafting digital experiences is my passion, and I've honed my skills
-            through a range of diverse projects. With a focus on frontend and
-            full-stack development, I've contibuted in the creation of dynamic
-            web and mobile applications that prioritize user experience and
-            technical excellence. My journey as a developer has equipped me with
-            the proficiency and confidence to approach any project with
-            determination and skill.
+            Crafting digital experiences is my passion, I've contibuted in the
+            creation of dynamic web and mobile applications that prioritize user
+            experience and technical excellence. My journey as a developer has
+            equipped me with the proficiency and confidence to approach any
+            project with determination and skill.
           </p>
           <p>
             I'm always on the lookout for new opportunities where I can
@@ -56,7 +54,12 @@ const AboutSection = () => {
             Connect
           </button>
         </motion.div>
-        <motion.div className="right-container" variants={variants} initial="right" whileInView="animate">
+        <motion.div
+          className="right-container"
+          variants={variants}
+          initial="right"
+          whileInView="animate"
+        >
           <div className="design">
             <div className="circle" />
             <div className="line" />

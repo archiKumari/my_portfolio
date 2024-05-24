@@ -20,7 +20,7 @@
     }
 
     @include mobile {
-      padding-top: 60px;
+      padding-top: 50px;
       font-size: 20px;
     }
 
@@ -33,13 +33,12 @@
       background-color: white;
     }
   }
-
+  
   .container {
     display: flex;
     align-items: center;
     width: 100%;
     height: 100%;
-    overflow: scroll;
 
     @include tablet {
       justify-content: flex-end;
@@ -77,10 +76,12 @@
         @include tablet {
           height: 50%;
           transform: none !important;
+          margin-top: 20px;
         }
 
         @include mobile {
-          height: 50%;
+          max-height: 40%;
+          margin-top: 20px;
           transform: none !important;
         }
 

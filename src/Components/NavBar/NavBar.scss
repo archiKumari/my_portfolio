@@ -19,6 +19,7 @@
     @include mobile {
       justify-content: flex-end;
       margin-top: 5px;
+      height: 30px;
     }
 
     @include tablet {

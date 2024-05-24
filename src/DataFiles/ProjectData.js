@@ -31,7 +31,7 @@ const projectData = [
     type: "Terminal Game",
     description:
       "This application is my rendition of the classic Snake game, developed entirely in Haskell and designed to run seamlessly in the terminal environment. Leveraging the power of various Haskell libraries, this project showcases the versatility and expressiveness of functional programming paradigms. With sleek visuals, smooth gameplay, and robust testing, this offers a captivating experience for enthusiasts of both retro gaming and functional programming.",
-    skills: ["Haskell", "Terminal Game", "Bricks", "Vty", "Lens"],
+    skills: ["Haskell", "Terminal Game", "Bricks"],
     category: "terminal",
     imagePath: image3,
     buttonText: "View Project",
