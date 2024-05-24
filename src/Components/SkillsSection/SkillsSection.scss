@@ -44,7 +44,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 3rem;
-    
+
     @include mobile {
       gap: 2rem;
     }
@@ -62,28 +62,6 @@
 
       @include mobile {
         width: 7rem;
-      }
-      
-      .overlay {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: rgba(255, 255, 255, 0.2);
-        border-radius: 0.5rem;
-      
-        button {
-          background-color: orange;
-          padding: 0.5rem;
-          font-size: 1rem;
-          font-weight: 500;
-          border:none;
-          border-radius: 0.5rem;
-          color: rgb(17,17,50);
-          cursor: pointer;
-        }
       }
 
       h3 {

@@ -62,22 +62,9 @@ function SkillsSection() {
     }
   };
 
-  const overlayVariants = {
-    initial: {
-      opacity: 0,
-    },
-    visible: {
-      opacity: 1,
-      transition: { duration: 0.5 },
-    }
-  };
-
   const SkillBlock = ({ title, skills }) => {
     return (
       <div className="icon-row">
-        <motion.div className="overlay" variants={overlayVariants} initial="initial" whileHover="visible" whileTap="visible">
-          <button onClick={scrollToPortfolio}>Explore</button>
-        </motion.div>
         <h3 variants={variants} whileHover="hover">{title}</h3>
         {skills.map((item, index) => (
           <div className="icon-container" key={index} variants={variants} whileHover="hover">
