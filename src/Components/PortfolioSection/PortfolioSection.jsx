@@ -21,6 +21,11 @@ const Single = ({ item, type }) => {
     ease: easeInOut,
     duration: 1,
   });
+
+  const handleViewDetails = (link) => {
+    window.open(link, "_blank");
+  };
+
   return (
     <section id="Portfolio">
       <div className="container">
@@ -36,7 +41,11 @@ const Single = ({ item, type }) => {
                 <Badge text={item} />
               ))}
             </div>
-            <button>View Details</button>
+            {item.buttonText === null ? null : (
+              <button onClick={() => handleViewDetails(item.link)}>
+                {item.buttonText}
+              </button>
+            )}
           </motion.div>
         </div>
       </div>
