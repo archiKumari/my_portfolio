@@ -7,8 +7,8 @@
 
 @include mobile {
   :root {
-    --clip-path-position: circle(30px at calc(100% - 30px) 30px);
-    --clip-path-position-opened: circle(1200px at calc(100% - 30px) 30px);
+    --clip-path-position: circle(20px at calc(100% - 20px) 20px);
+    --clip-path-position-opened: circle(1200px at calc(100% - 20px) 20px);
   }
 }
 
