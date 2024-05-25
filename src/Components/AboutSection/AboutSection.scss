@@ -9,15 +9,15 @@
   margin: auto;
   flex-direction: column;
 
+  @include tablet {
+    padding: 5%;
+  }
+
   @include mobile {
     margin: 0;
     max-width: 100%;
     align-items: center;
     justify-content: center;
-  }
-
-  @include tablet {
-    padding: 5%;
   }
 
   h2 {
@@ -27,7 +27,7 @@
     color: rebeccapurple;
 
     @include tablet {
-      padding-top: 8%;
+      padding-top: 5%;
       font-size: 60px;
     }
 
@@ -59,17 +59,17 @@
       line-height: 1.6;
       color: rgba(255, 255, 255, 0.7);
 
-      @include mobile {
-        height: 50%;
-        font-size: 12px;
-        line-height: 1.5;
-        gap: 15px;
-      }
-
       @include tablet {
-        height: 50%;
+        max-height: 50%;
         font-size: 22px;
         justify-content: center;
+      }
+
+      @include mobile {
+        max-height: 50%;
+        font-size: 13px;
+        line-height: 1.5;
+        gap: 15px;
       }
 
       button {
@@ -82,17 +82,17 @@
         font-size: 16px;
         font-weight: 600;
 
-        @include mobile {
-          font-size: 12px;
-          padding: 6px;
-          width: 80px;
-          border-radius: 8px;
-          align-self: center;
-        }
-
         @include tablet {
           font-size: 18px;
           padding: 10px;
+          align-self: center;
+        }
+
+        @include mobile {
+          font-size: 12px;
+          padding: 5px;
+          width: 80px;
+          border-radius: 8px;
           align-self: center;
         }
       }
@@ -105,12 +105,12 @@
       justify-content: flex-end;
 
       @include mobile {
-        height: 50%;
+        max-height: 50%;
         justify-content: center;
       }
 
       @include tablet {
-        height: 50%;
+        max-height: 50%;
         justify-content: center;
       }
 
@@ -146,7 +146,7 @@
 
       .circle {
         height: 15px;
-        width:  15px;
+        width: 15px;
         border-radius: 50%;
         background-color: rgba(255, 255, 255, 0.8);
       }
