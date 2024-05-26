@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="main-container">
       <Cursor />
-      <section id="Homepage">
+      <section id="/">
         <SideBar />
         <NavBar />
         <HeroSection />

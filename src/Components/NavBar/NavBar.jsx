@@ -15,7 +15,7 @@ const NavBar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const sections = document.querySelectorAll("section");
-      let currentSectionId = "Homepage";
+      let currentSectionId = "/";
 
       sections.forEach((section) => {
         const rect = section.getBoundingClientRect();
@@ -40,7 +40,7 @@ const NavBar = () => {
     <div className="navbar">
       <div className="wrapper">
         <motion.a
-          href="Homepage"
+          href="/"
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
