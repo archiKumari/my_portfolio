@@ -15,7 +15,7 @@ const NavBar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const sections = document.querySelectorAll("section");
-      let currentSectionId = "/";
+      let currentSectionId = "Homepage";
 
       sections.forEach((section) => {
         const rect = section.getBoundingClientRect();
@@ -40,7 +40,7 @@ const NavBar = () => {
     <div className="navbar">
       <div className="wrapper">
         <motion.a
-          href="/"
+          href="Homepage"
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
@@ -66,7 +66,7 @@ const NavBar = () => {
             </a>
           ))}
           <button>
-            <a href="/cv.pdf" download="Archi_Kumari_CV.pdf">
+            <a href="cv.pdf" download="Archi_Kumari_CV.pdf">
               Download CV
             </a>
           </button>
