@@ -13,7 +13,7 @@ const workData = [
     category: "web",
     imagePath: image3,
     buttonText: "View Live Website",
-    link: "https://kabirgyan.com//geetaGyan",
+    link: "https://kabirgyan.com/store/books",
   },
   {
     companyName: "PetDrifts Mobile",
