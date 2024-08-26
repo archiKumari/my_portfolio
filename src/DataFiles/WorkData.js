@@ -24,8 +24,8 @@ const workData = [
       "As a mobile software developer at Petdrifts, I developed a mobile application, featuring Bluetooth connectivity for data reception from peripheral devices and backend servers. I implemented state management and data fetching logic using React Hooks and asynchronous programming techniques. Various profiling methods were utilized to identify and address bottlenecks and optimize application performance.",
     category: "mobile",
     imagePath: image2,
-    buttonText: null,
-    link: null,
+    buttonText: "View Application",
+    link: "https://play.google.com/store/apps/details?id=com.petdriftsAPP&pcampaignid=web_share",
   },
   {
     companyName: "Betiyan Nidhi Limited",

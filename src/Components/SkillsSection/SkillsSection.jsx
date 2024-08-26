@@ -18,13 +18,15 @@ import { ReactComponent as HaskellIcon } from "../../Assets/Logo/haskell-icon.sv
 import { ReactComponent as ExpoIcon } from "../../Assets/Logo/expo-icon.svg";
 import { ReactComponent as PostgresIcon } from "../../Assets/Logo/postgresql-icon.svg";
 import { ReactComponent as ExpressIcon } from "../../Assets/Logo/express-icon.svg";
+import {ReactComponent as TypeScriptIcon} from "../../Assets/Logo/typescript.svg"
 
 function SkillsSection() {
   const frontendItems = [
+    { icon: faReact, text: "React" },
+    { icon: null, text: "TypeScript" },
     { icon: faHtml5, text: "HTML" },
     { icon: faCss3, text: "CSS" },
     { icon: faJs, text: "JavaScript" },
-    { icon: faReact, text: "React" },
   ];
   const mobileItems = [
     { icon: faReact, text: "React Native" },
@@ -78,6 +80,8 @@ function SkillsSection() {
               <PostgresIcon />
             ) : item.text === "Express" ? (
               <ExpressIcon />
+            ) : item.text === "TypeScript" ? (
+              <TypeScriptIcon />
             ) : (
               <FontAwesomeIcon icon={item.icon} />
             )}
